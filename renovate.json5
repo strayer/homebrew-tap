@@ -2,7 +2,15 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
+    ":disableRateLimiting",
     "helpers:pinGitHubActionDigests"
   ],
-  "labels": ["dependencies"]
+  "labels": ["dependencies"],
+  // Formula bumps (Renovate's homebrew manager rewrites url + sha256 from the new
+  // release tag) and action digests are the only updates here; `brew audit` in CI
+  // is the gate, so they merge on their own once green.
+  "automerge": true,
+  "automergeType": "pr",
+  "automergeStrategy": "rebase",
+  "platformAutomerge": true
 }

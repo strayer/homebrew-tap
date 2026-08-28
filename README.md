@@ -10,4 +10,4 @@ brew install strayer/tap/dock-badge-counter
 |---|---|
 | `dock-badge-counter` | https://github.com/strayer/dock-badge-counter |
 
-Formula versions are bumped automatically by each project's release workflow; this repo is not edited by hand except to add or fix formulae.
+Formula versions are bumped by Renovate (`url` + `sha256` from each project's release tags) and automerge once `brew audit` passes; this repo is not edited by hand except to add or fix formulae.
