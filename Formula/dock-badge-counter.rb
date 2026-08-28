@@ -1,8 +1,8 @@
 class DockBadgeCounter < Formula
   desc "Read macOS Dock notification badges, once or as a change-watching service"
   homepage "https://github.com/strayer/dock-badge-counter"
-  url "https://github.com/strayer/dock-badge-counter/archive/refs/tags/v2.0.0.tar.gz"
-  sha256 "731da1df34a509e8fff38fc2f3d8c230eaa666a69beabef161ed59b0d53871f2"
+  url "https://github.com/strayer/dock-badge-counter/archive/refs/tags/v2.0.1.tar.gz"
+  sha256 "bd4ef662b1bd22f30ed2d6884a8e8b7469769a412925b5401b02a21120186027"
   license "MIT"
 
   depends_on xcode: ["15.0", :build]
