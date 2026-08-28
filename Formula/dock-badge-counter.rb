@@ -9,6 +9,8 @@ class DockBadgeCounter < Formula
   depends_on macos: :ventura
 
   def install
+    # The source reports "dev"; the release tag (this formula's version) is the real number.
+    inreplace "Sources/Commands/DockBadgeCounter.swift", 'let version = "dev"', "let version = \"#{version}\""
     system "swift", "build", "--configuration", "release", "--disable-sandbox"
     bin.install ".build/release/dock-badge-counter"
     pkgetc.install "examples/config.toml" => "config.toml.example"
