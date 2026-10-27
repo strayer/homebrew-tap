@@ -6,6 +6,8 @@
     "helpers:pinGitHubActionDigests"
   ],
   "labels": ["dependencies"],
+  // sketchybar is pinned to a patched fork commit until the fix lands upstream.
+  "ignorePaths": ["Formula/sketchybar.rb"],
   // Formula bumps (Renovate's homebrew manager rewrites url + sha256 from the new
   // release tag) and action digests are the only updates here; `brew audit` in CI
   // is the gate, so they merge on their own once green.
