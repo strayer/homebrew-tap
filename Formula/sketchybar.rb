@@ -7,9 +7,9 @@ class Sketchybar < Formula
   env :std
   desc "Custom macOS statusbar with shell plugin, interaction and graph support"
   homepage "https://github.com/FelixKratz/SketchyBar"
-  url "https://github.com/strayer/SketchyBar/archive/018103b8a141e1ae703f4734906f1e653a6dcf8e.tar.gz"
+  url "https://github.com/strayer/SketchyBar/archive/87ba416f556ecc22204e7f74ba3f45d20c4880f6.tar.gz"
   version "2.24.1-fix852.2"
-  sha256 "21d306fc833b7cc1afcd9bdf45545e6e353e4d55676abcf0397f3d3ea7147f33"
+  sha256 "20414a3a2d6dc097b516b785313ba78ffd6f429b5b72f25935ce258242875287"
   license "GPL-3.0-only"
   head "https://github.com/strayer/SketchyBar.git", branch: "fix/macos27-topmost-menubar-agent"
 
