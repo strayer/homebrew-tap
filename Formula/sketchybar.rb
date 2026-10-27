@@ -1,14 +1,15 @@
 # Patched build of SketchyBar for testing the fix for FelixKratz/SketchyBar#852
-# (topmost=on bar unclickable under the macOS 27 MenuBarAgent window). Pinned to a
+# (bar unclickable under the macOS 27 MenuBarAgent window while the menu bar is
+# auto-hidden; the bar now follows the menu bar reveal state). Pinned to a
 # commit on the fork branch fix/macos27-topmost-menubar-agent; not bumped by Renovate.
 # Remove once the fix is released upstream.
 class Sketchybar < Formula
   env :std
   desc "Custom macOS statusbar with shell plugin, interaction and graph support"
   homepage "https://github.com/FelixKratz/SketchyBar"
-  url "https://github.com/strayer/SketchyBar/archive/6a88a7783a3a8dbf7d430096e121c5c5b9cc7ef2.tar.gz"
-  version "2.24.1-fix852"
-  sha256 "3dedeb14bcc9ced0ba909f446be221e57c368d8f9147dfcb79b0920a82de24ba"
+  url "https://github.com/strayer/SketchyBar/archive/018103b8a141e1ae703f4734906f1e653a6dcf8e.tar.gz"
+  version "2.24.1-fix852.2"
+  sha256 "21d306fc833b7cc1afcd9bdf45545e6e353e4d55676abcf0397f3d3ea7147f33"
   license "GPL-3.0-only"
   head "https://github.com/strayer/SketchyBar.git", branch: "fix/macos27-topmost-menubar-agent"
 
@@ -39,7 +40,7 @@ class Sketchybar < Formula
   def caveats
     <<~EOS
       This is a patched test build for https://github.com/FelixKratz/SketchyBar/issues/852.
-      The fix only applies with `sketchybar --bar topmost=on`.
+      It works with every topmost setting; topmost=off keeps the revealed menu bar usable.
 
       To return to the upstream release:
         brew services stop sketchybar
