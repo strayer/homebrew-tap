@@ -21,4 +21,4 @@ jobs:
           mkdir -p "$(dirname "$tap_dir")"
           ln -s "$GITHUB_WORKSPACE" "$tap_dir"
       - run: brew style strayer/tap
-      - run: brew audit --strict --online strayer/tap/dock-badge-counter
+      - run: brew audit --strict --online strayer/tap/claude-code-statusline strayer/tap/dock-badge-counter
