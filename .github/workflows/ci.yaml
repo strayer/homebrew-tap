@@ -20,5 +20,7 @@ jobs:
           tap_dir="$(brew --repository)/Library/Taps/strayer/homebrew-tap"
           mkdir -p "$(dirname "$tap_dir")"
           ln -s "$GITHUB_WORKSPACE" "$tap_dir"
+      # Homebrew refuses to load formulae from a tap that is not trusted.
+      - run: brew trust strayer/tap
       - run: brew style strayer/tap
       - run: brew audit --strict --online strayer/tap/claude-code-statusline strayer/tap/dock-badge-counter
