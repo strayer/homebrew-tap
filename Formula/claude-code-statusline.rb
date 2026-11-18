@@ -9,19 +9,19 @@ class ClaudeCodeStatusline < Formula
     depends_on arch: :arm64
 
     on_arm do
-      url "https://github.com/strayer/claude-code-statusline/releases/download/v1.4.0/claude-statusline-darwin-arm64"
-      sha256 "221b328fb2b4beacb44e25f52a3b4bca5d5f8a347b8120ba0deaa34a1b610ab7"
+      url "https://github.com/strayer/claude-code-statusline/releases/download/v1.5.0/claude-statusline-darwin-arm64"
+      sha256 "3550255398548dc42d21c4e7376d6f34a449cda6255717aaf6b31808b8e0f289"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/strayer/claude-code-statusline/releases/download/v1.4.0/claude-statusline-linux-amd64"
-      sha256 "1fdcecba57e5aaa9d62d4dc58fc0dc825d1582a6b1caa53ddc8a90fc04a37365"
+      url "https://github.com/strayer/claude-code-statusline/releases/download/v1.5.0/claude-statusline-linux-amd64"
+      sha256 "c54ea705d60aa8a872a8e43b0c4fcf6a58456588280382821efb49b3d086fc51"
     end
     on_arm do
-      url "https://github.com/strayer/claude-code-statusline/releases/download/v1.4.0/claude-statusline-linux-arm64"
-      sha256 "704cbabb2ea4e0c8265df54ccf104a71bd4fc32915dbddbfa8b526c5d835a8de"
+      url "https://github.com/strayer/claude-code-statusline/releases/download/v1.5.0/claude-statusline-linux-arm64"
+      sha256 "9d561150c752d764152bcb5b5b54fe7630690c86fc3a071ab5779076eb2a79dc"
     end
   end
 
